@@ -11,8 +11,7 @@
 ```
 git clone https://github.com/Simongolovinskiy/currency-converter.git
 ```
-```
-```
+
 - Cоздать и активировать виртуальное окружение
 ```
 python3 -m venv venv # Для Linux и macOS
