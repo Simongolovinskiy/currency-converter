@@ -13,4 +13,6 @@ class ConverterSerializer:
 
     def get_result(self, amount, base_cur, new_cur):
         result = self.conversion_api.convert(amount, base_cur, new_cur)
+        if result.get("result") == "error":
+            raise TypeError("Вы неправильно ввели данные. Проверьте правильность написания входных данных.")
         return JsonSerializer.json_to_result_of_conversion(result)

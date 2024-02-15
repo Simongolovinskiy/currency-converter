@@ -18,3 +18,7 @@ class SettingsManager:
     @staticmethod
     def get_telegram_token():
         return os.getenv("telegram_token")
+
+    @staticmethod
+    def get_chatgpt_token():
+        return os.getenv("chatgpt_token")
